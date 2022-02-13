@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <SearchScreen should show a Batman hero and input with value Batman 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-5"
+  >
+    <h4>
+      Buscar
+    </h4>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        autoComplete="off"
+        className="form-control"
+        name="searchText"
+        onChange={[Function]}
+        placeholder="Buscar un héroe"
+        type="text"
+        value="batman"
+      />
+      <div
+        className="d-grid gap-2"
+      >
+        <button
+          className="btn btn-outline-primary mt-3"
+          type="submit"
+        >
+          Buscar...
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-7"
+  >
+    <h4>
+      Resultados
+    </h4>
+    <hr />
+    <div
+      className="card animate__animated animate__fadeIn"
+    >
+      <div
+        className="row no-gutters"
+      >
+        <div
+          className="col-6"
+        >
+          <img
+            alt="Batman"
+            className="card-img"
+            src="../assets/heroes/dc-batman.jpg"
+          />
+        </div>
+        <div
+          className="col-6"
+        >
+          <div
+            className="card-body"
+          >
+            <h5
+              className="card-title"
+            >
+              Batman
+            </h5>
+            <p
+              className="card-text"
+            >
+              Bruce Wayne
+            </p>
+            <p
+              className="card-text"
+            >
+              <small
+                className="text-muted"
+              >
+                 
+                Detective Comics #27
+              </small>
+            </p>
+            <a
+              href="/hero/dc-batman"
+              onClick={[Function]}
+            >
+              Más...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Testing <SearchScreen should show a error if not found hero 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-5"
+  >
+    <h4>
+      Buscar
+    </h4>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        autoComplete="off"
+        className="form-control"
+        name="searchText"
+        onChange={[Function]}
+        placeholder="Buscar un héroe"
+        type="text"
+        value="qwererere"
+      />
+      <div
+        className="d-grid gap-2"
+      >
+        <button
+          className="btn btn-outline-primary mt-3"
+          type="submit"
+        >
+          Buscar...
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-7"
+  >
+    <h4>
+      Resultados
+    </h4>
+    <div
+      className="alert alert-danger animate__animated animate__fadeIn"
+    >
+      No hay resultados 
+      qwererere
+    </div>
+    <hr />
+  </div>
+</div>
+`;
+
+exports[`Testing <SearchScreen should show successfully with default values 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-5"
+  >
+    <h4>
+      Buscar
+    </h4>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        autoComplete="off"
+        className="form-control"
+        name="searchText"
+        onChange={[Function]}
+        placeholder="Buscar un héroe"
+        type="text"
+        value=""
+      />
+      <div
+        className="d-grid gap-2"
+      >
+        <button
+          className="btn btn-outline-primary mt-3"
+          type="submit"
+        >
+          Buscar...
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-7"
+  >
+    <h4>
+      Resultados
+    </h4>
+    <div
+      className="alert alert-info animate__animated animate__fadeIn"
+    >
+      Buscar un héroe
+    </div>
+    <hr />
+  </div>
+</div>
+`;
